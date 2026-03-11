@@ -1,6 +1,13 @@
 
 shop_list = []
 
+#recovery of the old shopping list not deleted
+with open('shoplist.txt','r') as f:
+    for ligne in f:
+        shop_list.append(ligne.strip())
+
+
+
 def menu():
     print("-------Menu-------")
     print("1. Display the list ")
@@ -41,6 +48,9 @@ while True:
     
 
     elif choice == "5" :
+        f = open('shoplist.txt','w')
+        for i in range(len(shop_list)):
+            f.write(f'{shop_list[i]} \n')
         print("\n Good Bye !\n")
         break
     
