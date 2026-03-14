@@ -31,8 +31,8 @@ while True:
 
     if choice == "1":
         cels=float(input("Enter the temperature in Celsuis : "))
-        print(f"Fahrenheit : {Celc_fahr(cels) : .2f}")
-        print(f"Kelvin : {Celc_kelv(cels) : .2f}")
+        print(f"Fahrenheit : {Cels_fahr(cels) : .2f}")
+        print(f"Kelvin : {Cels_kelv(cels) : .2f}")
     elif choice == "2":
         fahr=float(input("Enter the temperature in Fahrenheit : "))
         print(f"Celsuis : {Fahr_cels(fahr) : .2f}")
@@ -41,7 +41,8 @@ while True:
         kelv=float(input("Enter the temperature in Kelvin : "))
         print(f"Fahrenheit : {Kelv_fahr(kelv) : .2f}")
         print(f"Celsuis : {Kelv_cels(kelv) : .2f}")
-    elif choice == "4":if choice == "1":
+    elif choice == "4":
         print("Exiting......")
         break
     else:
+        print("Wrong entry ! Try again")
