@@ -13,7 +13,7 @@ def menu():
 def add_note():
     note = input("Enter your note : \n ")
     with open(FILE, "a") as file:
-        file.write(note + "\n")
+        file.write("-" + note + "\n")
     print("Note added successfully")
 
 
